@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+::selection {
+  background-color: #34a3e4;
+  color: #fff;
+}
 
 *,
 h1,
@@ -11,126 +14,135 @@ p {
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 body {
   font-family: Roboto, sans-serif;
-  background: #e2d7aa;
-  color: #000000;
+  background-color: #e2d7aa;
+  color: #000;
   font-size: 16px;
   width: 1180px;
+  text-align: center;
   margin: 0 auto;
-}
-img {
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
+  padding: 50px;
 }
 
-.img-container {
-  margin: 65px 0;
+/* Nav */
+nav ul {
+  list-style: none;
+  margin-bottom: 30px;
 }
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+nav ul li:hover a {
+  color: rgb(10, 116, 187);
+  font-weight: bold;
+}
+
+nav ul li:first-child a {
+  color: rgb(10, 116, 187);
+  font-weight: bold;
+}
+
+nav ul li:last-child a {
+  color: rgb(10, 116, 187);
+  font-weight: bold;
+}
+
+/* End Nav */
 
 h1 {
-  font-size: 60px;
-  font-weight: normal;
-  text-align: center;
-  margin-top: 65px;
-  font-family: "Exo 2", sans-serif;
+  font-size: 65px;
+  font-family: "Indie Flower", cursive;
+  margin-bottom: 50px;
 }
 
-nav {
-  margin: 30px;
+.img-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
-nav ul {
-  text-align: center;
-}
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-nav li a {
-  font-size: 28px;
-  color: #000000;
-}
-
-nav li:first-child a{
-  color: #0a4b80;
-  font-weight: bold;
-}
-
-nav li:last-child a{
-  color: #0a4b80;
-  font-weight: bold;
-}
-
+/* main */
 main {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
-article {
-  width: calc(100% / 3 - 25px);
+main article {
+  width: calc(100% / 3 - 20px);
 }
 
-article h2 {
-    font-size: 27px;
+main article h3 a {
+  text-decoration: none;
 }
 
-article h3 a {
-    color: rgba(0, 128, 255, 0.992);
-}
-
-article h2,
-article h3 {
-  text-align: center;
-}
-
-article img {
+main article img {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
 }
 
-article p::first-letter {
-  font-size: 40px;
+main article h2 + h3 + img + p {
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: justify;
+  line-height: 25px;
 }
 
-article h2 + h3 + img + p {
-  height: 340px;
-  line-height: 23px;
-  margin: 20px 0;
+main article h2 + h3 + img + p::first-letter {
+  font-size: 45px;
+  font-family: EucrosiaUPC, sans-serif;
 }
 
 article p:last-of-type span:first-of-type a::before {
-  content: url("images/comment.png");
+  content: url(images/comment.png);
   position: relative;
   right: 5px;
   top: 7px;
   padding: 10px;
 }
 
-article p a {
-    color: #fff;
+main article p {
+  text-align: left;
+  margin-bottom: 60px;
 }
 
-article p span.comments, .readmore {
-    background-color: #8A540A;
-    padding: 7px 10px;
-    text-transform: uppercase;
+main article .comments {
+  margin-right: 5px;
+  padding: 10px;
+  background-color: #8a540a;
 }
 
+main article .comments a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main article .readmore {
+  padding: 10px 15px;
+  background-color: #8a540a;
+}
+
+main article .readmore a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* End main */
+
+/* Footer */
 footer {
-  margin: 0px;
-  padding: 10px 0 10px 0;
-  text-align: center;
+  font-size: 18px;
 }
+/* End Footer */
