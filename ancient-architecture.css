@@ -78,7 +78,7 @@ main {
 }
 
 main article {
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 15px);
 }
 
 main article h3 a {
@@ -92,7 +92,7 @@ main article img {
   object-fit: cover;
 }
 
-main article h2 + h3 + img + p {
+main article p:first-of-type {
   margin-top: 30px;
   margin-bottom: 0;
   text-align: justify;
