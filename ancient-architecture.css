@@ -97,6 +97,7 @@ main article p:first-of-type {
   margin-bottom: 0;
   text-align: justify;
   line-height: 25px;
+  height: 410px;
 }
 
 main article h2 + h3 + img + p::first-letter {
